@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#DFD06D"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Time: 15"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Score: 0"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/time"
+        app:layout_constraintStart_toStartOf="@+id/time"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="366dp"
+        android:layout_height="499dp"
+        android:layout_marginTop="52dp"
+        android:onClick="raise_score"
+        app:columnCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:rowCount="4">
+
+        <!-- 1. satır -->
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="raise_score"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/ball" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="raise_score"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/ball" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="raise_score"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/ball" />
+
+        <!-- 2. satır -->
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/ball" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/ball" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="raise_score"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/ball" />
+
+        <!-- 3. satır -->
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="raise_score"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/ball" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="raise_score"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/ball" />
+
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="raise_score"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/ball" />
+
+        <!-- 4. satır -->
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="raise_score"
+            app:layout_column="0"
+            app:layout_row="3"
+            app:srcCompat="@drawable/ball" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="raise_score"
+            app:layout_column="1"
+            app:layout_row="3"
+            app:srcCompat="@drawable/ball" />
+
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="raise_score"
+            app:layout_column="2"
+            app:layout_row="3"
+            app:srcCompat="@drawable/ball" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
